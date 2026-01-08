@@ -1,0 +1,148 @@
+.repo-view {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.repo-header {
+    padding: 16px 24px;
+    background-color: #0d1117;
+    border-bottom: 1px solid #30363d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.repo-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.repo-title h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #58a6ff;
+}
+
+.commit-id {
+    font-family: monospace;
+    background: #21262d;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #8b949e;
+}
+
+.file-toolbar {
+    padding: 12px 24px;
+    background-color: #161b22;
+    border-bottom: 1px solid #30363d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.file-browser {
+    flex: 1;
+    padding: 24px;
+    overflow-y: auto;
+}
+
+.file-name {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.file-name:hover {
+    color: #58a6ff;
+    text-decoration: underline;
+}
+
+.file-name.active-file {
+    color: #58a6ff;
+    font-weight: bold;
+}
+
+.hash-text {
+    font-family: monospace;
+    color: #8b949e;
+}
+
+.empty-dir {
+    text-align: center;
+    color: #8b949e;
+    padding: 40px;
+}
+
+.file-editor {
+    margin-top: 24px;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    background-color: #0d1117;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.editor-header {
+    padding: 8px 16px;
+    background-color: #161b22;
+    border-bottom: 1px solid #30363d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.editor-title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #c9d1d9;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.code-input :deep(.el-textarea__inner) {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    border: none;
+    border-radius: 0;
+    font-family: 'Consolas', 'Monaco', monospace;
+    line-height: 1.5;
+    padding: 16px;
+    box-shadow: none;
+}
+
+.visibility-tag {
+    cursor: pointer;
+    /* user-select: none; */
+    transition: all 0.3s;
+}
+
+.visibility-tag:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.code-input :deep(.el-textarea__inner:focus) {
+    box-shadow: none;
+}
+
+:deep(.el-table) {
+    --el-table-bg-color: #0d1117;
+    --el-table-tr-bg-color: #0d1117;
+    --el-table-header-bg-color: #161b22;
+    --el-table-border-color: #30363d;
+    --el-table-text-color: #c9d1d9;
+    --el-table-header-text-color: #8b949e;
+    --el-table-row-hover-bg-color: #161b22;
+}
+
+:deep(.el-breadcrumb__inner) {
+    color: #8b949e !important;
+}
+
+:deep(.el-breadcrumb__item:last-child .el-breadcrumb__inner) {
+    color: #c9d1d9 !important;
+}

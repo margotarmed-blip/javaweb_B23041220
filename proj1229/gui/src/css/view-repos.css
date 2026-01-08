@@ -1,0 +1,175 @@
+.explore-container {
+    min-height: 100vh;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: 16px 32px;
+    background-color: #161b22;
+    border-bottom: 1px solid #30363d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-left h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #e6edf3;
+}
+
+.back-btn {
+    color: #8b949e;
+    font-size: 16px;
+}
+
+.back-btn:hover {
+    color: #58a6ff;
+}
+
+.user-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #8b949e;
+}
+
+.list-view {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.search-section {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    background-image: radial-gradient(#30363d 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    width: 600px;
+    max-width: 90%;
+}
+
+.search-input :deep(.el-input__wrapper) {
+    background-color: #0d1117;
+    box-shadow: 0 0 0 1px #30363d inset;
+}
+
+.search-input :deep(.el-input__inner) {
+    color: #c9d1d9;
+}
+
+.repo-grid-container {
+    flex: 1;
+    padding: 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.repo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.repo-card {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 16px;
+    transition: transform 0.2s, border-color 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.repo-card:hover {
+    border-color: #8b949e;
+    transform: translateY(-2px);
+}
+
+.card-header {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.repo-icon {
+    margin-top: 4px;
+    color: #8b949e;
+}
+
+.repo-info {
+    flex: 1;
+    overflow: hidden;
+}
+
+.repo-name {
+    margin: 0 0 4px 0;
+    font-size: 16px;
+    color: #58a6ff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.repo-name:hover {
+    text-decoration: underline;
+}
+
+.repo-owner {
+    font-size: 12px;
+    color: #8b949e;
+}
+
+.card-body {
+    flex: 1;
+    margin-bottom: 16px;
+}
+
+.meta-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 8px;
+    color: #8b949e;
+}
+
+.meta-item .value {
+    font-family: monospace;
+    color: #c9d1d9;
+}
+
+.card-footer {
+    margin-top: auto;
+}
+
+.empty-state {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.detail-view {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
